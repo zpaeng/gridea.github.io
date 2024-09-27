@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zpaeng.github.io</id>
+    <title>杂记</title>
+    <updated>2024-09-27T06:31:30.427Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zpaeng.github.io"/>
+    <link rel="self" href="https://zpaeng.github.io/atom.xml"/>
+    <logo>https://zpaeng.github.io/images/avatar.png</logo>
+    <icon>https://zpaeng.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, 杂记</rights>
+    <entry>
+        <title type="html"><![CDATA[Debian设置ipv4优先]]></title>
+        <id>https://zpaeng.github.io/post/debian-sets-ipv4-priority/</id>
+        <link href="https://zpaeng.github.io/post/debian-sets-ipv4-priority/">
+        </link>
+        <updated>2024-09-06T02:15:55.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[acme证书更新(cloudflare)-docker版nginx]]></title>
+        <id>https://zpaeng.github.io/post/acme-refresh-ssl/</id>
+        <link href="https://zpaeng.github.io/post/acme-refresh-ssl/">
+        </link>
+        <updated>2024-08-27T15:42:24.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[win远程桌面配置自定义ssl证书]]></title>
+        <id>https://zpaeng.github.io/post/win-remote-desktop-ssl-cert/</id>
+        <link href="https://zpaeng.github.io/post/win-remote-desktop-ssl-cert/">
+        </link>
+        <updated>2024-03-24T02:38:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[更改swapfile大小(虚拟内存)]]></title>
+        <id>https://zpaeng.github.io/post/change-swapfile-size/</id>
+        <link href="https://zpaeng.github.io/post/change-swapfile-size/">
+        </link>
+        <updated>2023-07-26T08:47:49.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docker部署java前后端分离项目]]></title>
+        <id>https://zpaeng.github.io/post/docker-publish-java-software/</id>
+        <link href="https://zpaeng.github.io/post/docker-publish-java-software/">
+        </link>
+        <updated>2023-07-26T08:37:51.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记录valine评论系统使用]]></title>
+        <id>https://zpaeng.github.io/post/record-valine-use/</id>
+        <link href="https://zpaeng.github.io/post/record-valine-use/">
+        </link>
+        <updated>2023-07-12T03:01:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vps测速解锁命令]]></title>
+        <id>https://zpaeng.github.io/post/vps-speed-unlock/</id>
+        <link href="https://zpaeng.github.io/post/vps-speed-unlock/">
+        </link>
+        <updated>2023-07-11T01:31:59.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数据库操作相关]]></title>
+        <id>https://zpaeng.github.io/post/database-series/</id>
+        <link href="https://zpaeng.github.io/post/database-series/">
+        </link>
+        <updated>2023-07-11T01:20:36.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Debian11修改DNS]]></title>
+        <id>https://zpaeng.github.io/post/debian11-update-dns/</id>
+        <link href="https://zpaeng.github.io/post/debian11-update-dns/">
+        </link>
+        <updated>2023-07-11T01:12:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Maven安装本地jar]]></title>
+        <id>https://zpaeng.github.io/post/maven-install-local-jar/</id>
+        <link href="https://zpaeng.github.io/post/maven-install-local-jar/">
+        </link>
+        <updated>2023-07-10T01:08:10.000Z</updated>
+    </entry>
+</feed>

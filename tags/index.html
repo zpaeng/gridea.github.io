@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="zpaeng&#39;s Blog">
+<meta name="description" content="">
+<meta name="theme-color" content="#000">
+<title>杂记</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1727418656059">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LL54V7J3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LL54V7J3Q');
+</script>
+
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>杂记</span>
+            </a>  
+          
+        </div>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-globe"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  gemini">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">zpaeng</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>一个Java程序猿</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">11</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://zpaeng.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://github.com/zpaeng">
+              <i class="fa fa-github-alt" title="Github"></i>
+            </a>
+          
+            <a href="https://t.me/zpaeng">
+              <i class="fa fa-telegram" title="Telegram"></i>
+            </a>
+          
+            <a href="mailto:zpaeng@outlook.com">
+              <i class="fa fa-envelope" title="Outlook"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+  
+
+
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section tags-section bg-color posts-expand">
+            <div class="tags-box">
+  <div class="tag-cloud-title language" data-lan="cloud-tags" data-count="3">
+    非常好！目前共计 3 个标签，继续努力！
+  </div>
+  <div class="tag-cloud-list" id="tags">
+    
+      
+      
+        
+          
+            
+      
+        
+      
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+            
+      
+      <a class="cloud-tag" href="https://zpaeng.github.io/tag/g9OHK0cSY/" rel="6">vps</a>
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+      <a class="cloud-tag" href="https://zpaeng.github.io/tag/PE6g-FXhN/" rel="3">java</a>
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <a class="cloud-tag" href="https://zpaeng.github.io/tag/DS3V7SIO6/" rel="1">blog create</a>
+    
+  </div>
+</div>
+<script>
+
+  let fontStart = 12, fontEnd = 30, colorStart = '#666', colorEnd = '#000';
+  let tags = document.querySelector('#tags').children;
+  let counts = [];
+  for(let i = 0; i < tags.length; i++) {
+    counts.push(tags[i].rel);
+  }
+  let lowest = Math.min.apply(null,counts), highest = Math.max.apply(null,counts);;
+  let range = highest - lowest;
+  if (range === 0) {
+    range = 1;
+  }
+  let fontIncr, colorIncr;
+  fontIncr = (fontEnd - fontStart) / range;
+  
+  let sColorArr = toRGB(colorStart), eColorArr = toRGB(colorEnd);
+
+  for(let i = 0; i < tags.length; i++) {
+    let disCount = tags[i].rel - lowest;
+    let fontSize = fontStart + disCount * fontIncr;
+    let style = 'font-size: ' + fontSize + 'px;';
+    let arr = [];
+    for(let c = 0; c < sColorArr.length; c++) {
+      if (disCount === 0) {
+        disCount = 1;
+      }
+      let val = (sColorArr[c] - eColorArr[c]) / range * disCount;
+      if (val >= 100) {
+        val = eColorArr[c];
+      } else if (val <= 0) {
+        val = sColorArr[c];
+      }
+      arr[c] = Math.floor(val);
+    }
+    style += 'color: ' + toHex(arr);
+    tags[i].style = style;
+  }
+
+  function toRGB(code) {
+    if (code.length === 4) {
+      code = code.replace(/(\w)(\w)(\w)/gi, "\$1\$1\$2\$2\$3\$3");
+    }
+    var hex = /(\w{2})(\w{2})(\w{2})/.exec(code);
+    return [parseInt(hex[1], 16), parseInt(hex[2], 16), parseInt(hex[3], 16)];
+  }
+
+  function toHex(ary) {
+    return "#" + ((1 << 24) + (ary[0] << 16) + (ary[1] << 8) + ary[2]).toString(16).slice(1);
+  }
+
+</script>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+    
+        <div class="gemini back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "false";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/debian-sets-ipv4-priority/"" data-c="
+          &lt;h1 id=&#34;测试目前vps是否是ipv4优先&#34;&gt;测试目前vps是否是ipv4优先&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;curl ip.sb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果你不想使用 IPv6 优先，可以在&lt;code&gt;/etc/gai.conf&lt;/code&gt;文件中找到：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#precedence ::ffff:0:0/96  100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消注释，修改为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;precedence ::ffff:0:0/96  100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;一句话命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sed -i &#39;s/#precedence ::ffff:0:0\/96  100/precedence ::ffff:0:0\/96  100/&#39; /etc/gai.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时再使用&lt;code&gt;curl ip.sb&lt;/code&gt;测试&lt;/p&gt;
+&lt;h1 id=&#34;禁用-ipv6&#34;&gt;禁用 IPv6&lt;/h1&gt;
+&lt;p&gt;修改 /etc/sysctl.conf 文件，首先找到你的网卡名称，这里以 eth0 为例，然后加入如下内容：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net.ipv6.conf.all.autoconf = 0
+net.ipv6.conf.default.autoconf = 0
+net.ipv6.conf.all.accept_ra = 0
+net.ipv6.conf.default.accept_ra = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv6.conf.eth0.disable_ipv6 = 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果需要其他网卡则更改或添加 net.ipv6.conf.eth0.disable_ipv6 = 1 即可。&lt;/p&gt;
+&lt;p&gt;一句话命令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat &amp;gt;&amp;gt; /etc/sysctl.conf &amp;lt;&amp;lt; EOF
+net.ipv6.conf.all.autoconf = 0
+net.ipv6.conf.default.autoconf = 0
+net.ipv6.conf.all.accept_ra = 0
+net.ipv6.conf.default.accept_ra = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv6.conf.eth0.disable_ipv6 = 1
+EOF
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后使用&lt;code&gt;sysctl -p&lt;/code&gt;来重新加载配置文件，此时查看&lt;code&gt;ip a&lt;/code&gt;就可以发现 IPv6 已经被禁止了。&lt;/p&gt;
+">Debian设置ipv4优先</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/acme-refresh-ssl/"" data-c="
+          &lt;ol&gt;
+&lt;li&gt;安装acme.sh&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;自动安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl https://get.acme.sh | sh -s email=my@example.com
+
+设置acme.sh自动更新
+acme.sh --upgrade --auto-upgrade
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;手动安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone --depth 1 https://github.com/acmesh-official/acme.sh.git
+cd acme.sh
+./acme.sh --install -m my@example.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;映射acme.sh&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;alias acme.sh=~/.acme.sh/acme.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;生成证书&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;切换letsencrypt&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;acme.sh --set-default-ca --server letsencrypt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;CLOUDFLARE&lt;br&gt;
+生成CF_Token【我的个人资料-API令牌-创建令牌-编辑区域dns】区域选所有区域，然后生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;export CF_Email=&amp;quot;xxxx@example.com&amp;quot;
+export CF_Token=&amp;quot;xxxxxxxxxxxxxxxxxxxxxxxx&amp;quot;
+acme.sh --issue --dns dns_cf -d aa.com -d www.aa.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;DNSPod&lt;br&gt;
+生成DP_Key【账号中心-API密钥-DNSPod Token-创建密钥】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;export DP_Id=&amp;quot;1234&amp;quot;
+export DP_Key=&amp;quot;sADDsdasdgdsf&amp;quot;
+acme.sh --issue --dns dns_dp -d aa.com -d www.aa.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;安装证书&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;替换路径/容器id&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;acme.sh --install-cert -d example.com \
+--key-file       /path/to/keyfile/in/nginx/cert.key  \
+--fullchain-file /path/to/fullchain/nginx/fullchain.cer \
+--reloadcmd     &amp;quot;service docker restart 容器id&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;更新证书&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前自动更新证书&lt;br&gt;
+请确保 cronjob 正确安装, 看起来是类似这样的:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;crontab  -l
+
+56 * * * * &amp;quot;/root/.acme.sh&amp;quot;/acme.sh --cron --home &amp;quot;/root/.acme.sh&amp;quot; &amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+">acme证书更新(cloudflare)-docker版nginx</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/win-remote-desktop-ssl-cert/"" data-c="
+          &lt;h1 id=&#34;合并证书&#34;&gt;合并证书&lt;/h1&gt;
+&lt;p&gt;准备自定义证书&lt;code&gt;*.key&lt;/code&gt;和&lt;code&gt;*.crt&lt;/code&gt;，通过openssl合并生成pfx文件&lt;br&gt;
+cmd输入&lt;code&gt;openssl pkcs12 -export -out &amp;lt;文件名&amp;gt;.pfx -inkey &amp;lt;文件名&amp;gt;.key -in &amp;lt;文件名&amp;gt;.crt&lt;/code&gt;，再设置一个临时密码&lt;/p&gt;
+&lt;h1 id=&#34;配置证书&#34;&gt;配置证书&lt;/h1&gt;
+&lt;h2 id=&#34;导入证书&#34;&gt;导入证书&lt;/h2&gt;
+&lt;p&gt;双击&lt;code&gt;*.pfx&lt;/code&gt;文件，选择本地计算机，点击下一步&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248309729.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+输入之前的临时密码，点击下一步&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248428643.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+证书存储路径选择个人，点击下一步&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248497265.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;获取证书hash&#34;&gt;获取证书hash&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;win+r&lt;/code&gt;输入&lt;code&gt;certlm.msc&lt;/code&gt;，展开到 证书 – 本地计算机\个人\证书, 双击你刚才导入的证书也可以查看&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248765742.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248815689.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+双击证书，点击&lt;code&gt;指纹&lt;/code&gt;，复制hash&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711248924063.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置-rdp-服务&#34;&gt;配置 RDP 服务&lt;/h2&gt;
+&lt;p&gt;CMD(管理员模式)打开，输入&lt;code&gt;wmic /namespace:\\root\cimv2\TerminalServices PATH Win32_TSGeneralSetting Set SSLCertificateSHA1Hash=&amp;quot;&amp;lt;刚才获得的Hash&amp;gt;&amp;quot;&lt;/code&gt;&lt;br&gt;
+最后重启 TermService, 测试连接即可. 注意连接的 Hostname 必须和证书中的一致&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1711249089439.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+重新远程，看远程的小锁对不对&lt;/p&gt;
+">win远程桌面配置自定义ssl证书</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/change-swapfile-size/"" data-c="
+          &lt;ol&gt;
+&lt;li&gt;查看swapfile大小&lt;pre&gt;&lt;code&gt;swapon -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;关闭swapfile&lt;pre&gt;&lt;code&gt;sudo swapoff /swapfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;设置swapfile大小为8G&lt;pre&gt;&lt;code&gt;sudo dd if=/dev/zero of=/swapfile bs=1M count=8192
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;设置swapfile类型&lt;pre&gt;&lt;code&gt;sudo mkswap /swapfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;启用swapfile&lt;pre&gt;&lt;code&gt;sudo swapon /swapfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+">更改swapfile大小(虚拟内存)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/docker-publish-java-software/"" data-c="
+          &lt;ol&gt;
+&lt;li&gt;拉取java镜像&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;docker pull openjdk:8u252
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;运行jar文件，生成jar容器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d 
+    -p 8050:8050 
+    -v /data/xxx:/data/xx 
+    --name xx 
+    openjdk:8u252 java -jar /data/xx/xx.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;日志查看：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker logs -f --tail 100 xx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;-d：后台运行
+-p：端口映射
+-v /data/xxx:/data/xx: 将宿主机的路径映射到容器中
+--name： 定义生成容器的名称
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;拉取nginx&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;docker pull nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;运行前端项目，生成nginx容器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d 
+    -p 9001:9001 
+    -v /data/xx/default.conf:/etc/nginx/conf.d/default.conf 
+    -v /data/xx/dist:/usr/share/nginx/html 
+    --name nginx 
+    nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;nginx配置，可配置接口调用地址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost;
+
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+	location /api/ {
+		proxy_pass http://127.0.0.1:8088/api/;
+	}
+	
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache&#39;s document root
+    # concurs with nginx&#39;s one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+&lt;/code&gt;&lt;/pre&gt;
+">docker部署java前后端分离项目</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/record-valine-use/"" data-c="
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://console.leancloud.app/&#34;&gt;LeanCloud&lt;/a&gt;注册账号&lt;/li&gt;
+&lt;li&gt;创建应用&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1689131078079.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;绑定AppID和AppKey&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1689131379463.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;安全中心绑定自己的博客域名&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1689131516470.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+通过如上步骤基本上已经是可以使用了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;【注】&lt;/strong&gt; 调用评论的时候有可能会发生跨域问题&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Access to XMLHttpRequest at &#39;*&#39; from origin &#39;*&#39; has been blocked by CORS policy: Response to preflight request doesn&#39;t pass access control check: No &#39;Access-Control-Allow-Origin&#39; header is present on the requested resource.
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决办法：&lt;code&gt;在【域名绑定】绑定自己博客的二级域名，并配置DNS解析&lt;/code&gt;，回到第二步，同时绑定你的域名Rest API&lt;br&gt;
+&lt;img src=&#34;https://zpaeng.github.io/post-images/1689131745464.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">记录valine评论系统使用</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/vps-speed-unlock/"" data-c="
+          &lt;p&gt;三网测速&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -Lso- https://git.io/superspeed_uxh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;YABS&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -sL yabs.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;流媒体解锁测试&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+bash &amp;lt;(curl -L -s check.unlock.media)
+bash &amp;lt;(curl -L -s https://netflix.dad/detect-script)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vps规格测试脚本&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; curl -so- 86.re/bench.sh | bash
+ wget -qO- git.io/superbench.sh | bash
+curl -sL yabs.sh | bash
+curl -sL yabs.sh | bash -s -- -i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;三网测速&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash &amp;lt;(curl -Lso- https://git.io/superspeed.sh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vps查看回程线路脚本&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;wget -qO- git.io/besttrace | bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vps的cpu性能测试脚本&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh &amp;amp;&amp;amp; chmod +x unixbench.sh &amp;amp;&amp;amp; ./unixbench.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;独服硬盘测试&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;wget -q https://github.com/Aniverse/A/raw/i/a &amp;amp;&amp;amp; bash a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vps去程测试网址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://tools.ipip.net/traceroute.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;vps的ping测试网址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://ping.pe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;小鸡监控&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://ping0.cc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看线路&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
+&lt;/code&gt;&lt;/pre&gt;
+">vps测速解锁命令</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/database-series/"" data-c="
+          &lt;h1 id=&#34;mysql&#34;&gt;mysql&lt;/h1&gt;
+&lt;h2 id=&#34;新增字段&#34;&gt;新增字段&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD 字段名 varchar(64) DEFAULT NULL COMMENT &#39;字段备注&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;修改字段备注&#34;&gt;修改字段备注&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 MODIFY 字段名 VARCHAR(255) COMMENT &#39;字段备注&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;分页查询&#34;&gt;分页查询&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;select * from table limit (start-1)*pageSize,pageSize; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;oracle&#34;&gt;oracle&lt;/h1&gt;
+&lt;h2 id=&#34;新增字段-2&#34;&gt;新增字段&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;alter table 表名 add 字段名 char(1);
+comment on column 表名.字段名 is &#39;字段备注&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;修改默认值&#34;&gt;修改默认值&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;alter table 表名 modify 字段名 default &#39;0&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;新增用户赋权&#34;&gt;新增用户赋权&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sqlplus /nolog
+conn system/123456 as sysdba;
+create user backup identified by 123456;
+grant create session to backup;  
+grant create table to backup;  
+grant create tablespace to backup;  
+grant create view to backup;
+grant dba to backup;		//赋予管理员权限
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;导入数据库&#34;&gt;导入数据库&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;imp 用户名/密码@XE file=/home/oracle/test.dmp full=y ignore=y
+impdp rad/rad table_exists_action=truncate  directory=DATA_PUMP_DIR dumpfile=llm.dmp logfile=llm.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;密码相关操作&#34;&gt;密码相关操作&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;1） 查看密码期限
+SELECT * FROM dba_profiles WHERE profile=&#39;DEFAULT&#39; AND resource_name=&#39;PASSWORD_LIFE_TIME&#39;
+一般如果没有修改的话，期限一般是180天
+2）将密码期限修改为无限期
+ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED
+3）用户名密码不区分大小写
+alter system set sec_case_sensitive_logon=false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;达梦&#34;&gt;达梦&lt;/h1&gt;
+&lt;h2 id=&#34;查询表字段&#34;&gt;查询表字段&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT COLUMN_NAME, DATA_TYPE, DATA_LENGTH FROM USER_TAB_COLUMNS  WHERE TABLE_NAME = &#39;table_name&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;查询字段注释&#34;&gt;查询字段注释&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;select DISTINCT * from all_col_comments  WHERE TABLE_NAME=&#39;table_name&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;生成uuid&#34;&gt;生成UUID&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT SUBSTR(RAWTOHEX(SYS_GUID()), 1, 8) || &#39;-&#39; ||
+    SUBSTR(RAWTOHEX(SYS_GUID()), 9, 4) || &#39;-&#39; ||
+    SUBSTR(RAWTOHEX(SYS_GUID()), 13, 4) || &#39;-&#39; ||
+    SUBSTR(RAWTOHEX(SYS_GUID()), 17, 4) || &#39;-&#39; ||
+    SUBSTR(RAWTOHEX(SYS_GUID()), 21, 12);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;新增字段-3&#34;&gt;新增字段&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;ALTER TABLE &amp;quot;model_name&amp;quot;.&amp;quot;table_name&amp;quot; ADD column_name varchar2(100);
+COMMENT ON COLUMN &amp;quot;model_name&amp;quot;.&amp;quot;table_name&amp;quot;.&amp;quot;column_name&amp;quot; IS &#39;字段名称&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+">数据库操作相关</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/debian11-update-dns/"" data-c="
+          &lt;ol&gt;
+&lt;li&gt;删除 resolv.conf 文件&lt;br&gt;
+&lt;code&gt;rm -f /etc/resolv.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建并编辑 resolv.conf 文件&lt;br&gt;
+&lt;code&gt;editor /etc/resolv.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;填写上指定的 DNS 服务器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;    nameserver 1.1.1.1
+    nameserver 1.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;设置写保护锁定 resolv.conf 文件&lt;br&gt;
+&lt;code&gt;chattr +i /etc/resolv.conf&lt;/code&gt;&lt;br&gt;
+此时 resolv.conf 文件会被锁定, 重启系统后不会被覆盖。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;  如果想要解锁可以运行：&lt;code&gt;chattr -i /etc/resolv.conf&lt;/code&gt;&lt;/p&gt;
+">Debian11修改DNS</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/bwh-aff/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://zpaeng.github.io/post-images/1688973306756.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;一-2023-搬瓦工优惠码&#34;&gt;一、2023 搬瓦工优惠码&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;搬瓦工优惠码：&lt;/strong&gt; &lt;em&gt;BWH3HYATVBJW&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;搬瓦工优惠说明：&lt;/strong&gt; 优惠码力度为 6.58%，也就是说&lt;strong&gt;九三折&lt;/strong&gt;。优惠码是&lt;strong&gt;循环折扣&lt;/strong&gt;，也就是说续费不会涨价。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;二-2023-搬瓦工套餐推荐&#34;&gt;二、2023 搬瓦工套餐推荐&lt;/h1&gt;
+&lt;p&gt;目前下面表格中的都是比较推荐的一些方案，表格中的是原价，大家可以输入优惠码享受折扣价格，或者直接乘以 0.93 就可以估算一下大致价格。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;搬瓦工优惠码：&lt;/strong&gt; &lt;em&gt;BWH3HYATVBJW&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- more --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;方案&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;内存&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;CPU&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;硬盘&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;流量/月&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;带宽&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;机房&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;价格&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;购买&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2 GIA&lt;em&gt;限量版&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;500GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC3 CN2 GIA  / DC8 ZNET&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$89.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=105&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2&lt;em&gt;最便宜&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC3 CN2  / DC8 ZNET&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$49.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=57&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC3 CN2  / DC8 ZNET&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$52.99/半年、$99.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=58&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2 GIA-E&lt;em&gt;最推荐&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2.5Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC6 CN2 GIA-E / DC9 CN2 GIA / 日本软银 JPOS_1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$49.99/季度、$169.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=87&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2 GIA-E&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2.5Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC6 CN2 GIA-E / DC9 CN2 GIA / 日本软银 JPOS_1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$89.99/季度、$299.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=88&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2 GIA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC9 CN2 GIA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$31.99/季度、$113.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=72&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CN2 GIA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DC9 CN2 GIA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$61.99/季度、$225.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=73&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;HK&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;40GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.5TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;香港 CN2 GIA / 香港 PCCW&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$89.99/月、$899.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=95&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;HK&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4核&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;80GB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1TB&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1Gbps&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;香港 CN2 GIA / 香港 PCCW&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$155.99/月、$1559.99/年&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://bwh88.net/aff.php?aff=72017&amp;amp;pid=96&#34;&gt;购买&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;三-2023-搬瓦工优惠力度分析&#34;&gt;三、2023 搬瓦工优惠力度分析&lt;/h1&gt;
+&lt;p&gt;整体而言，瓦工目前开始走高端路线，整体价格优惠力度不大，对比其他友商价格偏贵。但其线路质量和服务稳定性均不错，也算是老牌服务器商家了。所以是否选择就看各位自己了。&lt;/p&gt;
+&lt;p&gt;总结就是不差钱的情况下，电信推荐选择 CN2 GIA / CN2 GIA-E 机房，联通推荐选择日本软银机房。&lt;/p&gt;
+">2023 搬瓦工购买指北：BWH3HYATVBJW，循环折扣，终身九三折优惠</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/maven-install-local-jar/"" data-c="
+          &lt;pre&gt;&lt;code&gt;cd /Applications/IntelliJ\ IDEA.app/Contents/plugins/maven/lib/maven3
+ 
+./mvn install:install-file -DgroupId=com.dm -DartifactId=DmJdbcDriver -Dversion=1.6.0 -Dpackaging=jar -Dfile=/Users/zp/Downloads/DmJdbcDriver-1.6.0.jar
+&lt;/code&gt;&lt;/pre&gt;
+">Maven安装本地jar</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://zpaeng.github.io/post/debian-open-bbr/"" data-c="
+          &lt;h2 id=&#34;开启bbr&#34;&gt;开启bbr&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;echo &#39;# BBR&#39; &amp;gt;&amp;gt; /etc/sysctl.conf
+echo &#39;net.core.default_qdisc = fq&#39; &amp;gt;&amp;gt; /etc/sysctl.conf
+echo &#39;net.ipv4.tcp_congestion_control = bbr&#39; &amp;gt;&amp;gt; /etc/sysctl.conf
+sysctl -p
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;验证是否已经开启&#34;&gt;验证是否已经开启&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sysctl net.ipv4.tcp_available_congestion_control
+sysctl net.ipv4.tcp_congestion_control
+&lt;/code&gt;&lt;/pre&gt;
+">debian开启bbr</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+<script src="/media/js/mouse/peace.js"></script>
+
+
+
+
+
+</html>
